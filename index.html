@@ -3,257 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بوابة الأنمي والألعاب</title>
+<title>بوابة الألعاب والأنمي</title>
 
 <style>
-body{
-margin:0;
-font-family:Arial;
-background: radial-gradient(circle at top, #1a1a1a, #000);
-color:white;
-overflow-x:hidden;
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
 }
 
-/* خلفية متحركة خفيفة */
-body::before{
-content:"";
-position:fixed;
-width:100%;
-height:100%;
-background:url("https://images.unsplash.com/photo-1536152470836-b943b246224c") center/cover;
-opacity:0.15;
-z-index:-1;
-filter: blur(2px);
+.header {
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  background: black;
+  font-weight: bold;
 }
 
-/* الهيدر */
-header{
-text-align:center;
-padding:30px;
-font-size:32px;
-font-weight:bold;
-background:rgba(0,0,0,0.6);
-backdrop-filter: blur(10px);
-border-bottom:1px solid #333;
+.big-btn {
+  display: block;
+  margin: 20px auto;
+  width: 85%;
+  padding: 18px;
+  background: linear-gradient(45deg, #ff0000, #ff9800);
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-/* الشبكة */
-.container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:25px;
+.section {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-/* الكروت */
-.card{
-position:relative;
-height:220px;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 0 20px rgba(0,0,0,0.6);
-transition:0.3s;
-display:flex;
-align-items:flex-end;
+.box {
+  background: #141414;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
-.card:hover{
-transform:scale(1.05);
+.box:hover {
+  transform: scale(1.04);
 }
 
-/* طبقة سوداء */
-.card::before{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.55);
+.box img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
-/* المحتوى */
-.content{
-position:relative;
-padding:15px;
-z-index:2;
+.box-content {
+  padding: 15px;
 }
 
-h2{
-margin:0;
-font-size:18px;
+.box a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #00bcd4;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-p{
-font-size:13px;
-opacity:0.8;
-}
-
-/* زر */
-a{
-display:inline-block;
-margin-top:10px;
-padding:8px 14px;
-background:linear-gradient(45deg,#ff0000,#ff9800);
-border-radius:10px;
-text-decoration:none;
-color:white;
-font-weight:bold;
-transition:0.3s;
-}
-
-a:hover{
-transform:scale(1.1);
-}
-
-/* الخلفيات لكل قسم */
-.kingdom{background:url("https://images.unsplash.com/photo-1627856014754-290b58f1f1d0") center/cover;}
-.pubg{background:url("https://images.unsplash.com/photo-1606813907291-d86efa9b94db") center/cover;}
-.ff{background:url("https://images.unsplash.com/photo-1612287230202-1ff1d85d1b8b") center/cover;}
-.naruto{background:url("https://images.unsplash.com/photo-1614285457768-646f65ca8548") center/cover;}
-.iphone{background:url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9") center/cover;}
-
-/* فوتر */
-footer{
-text-align:center;
-padding:20px;
-opacity:0.6;
-font-size:13px;
+.footer {
+  text-align: center;
+  padding: 15px;
+  opacity: 0.6;
 }
 </style>
 </head>
 
 <body>
 
-<header>🔥 بوابة الأنمي والألعاب 🔥</header>
-<script>
-(function(ga){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = ga || {};
-s.src = "\/\/selfassured-celebration.com\/byXSVCs.dHG\/l\/0-YuW\/cT\/bePmE9humZrULlVk\/PgTkYA5\/N_DJMP0LOADZEMt\/NPjJkl0UMUzjQH4PNAQi";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-<div class="container">
+<div class="header">
+🔥 بوابة الألعاب والأنمي 🔥
+</div>
 
-<div class="card kingdom">
-<div class="content">
+<a href="#" class="big-btn">🔥 اضغط هنا للدخول 🔥</a>
+
+<div class="section">
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1608889175155-3d9f1c9c7b8f">
+<div class="box-content">
 <h2>🎬 أنمي كينجدوم</h2>
-<p>كل المعلومات + التحليلات</p>
-<a href="https://b434mear.github.io" target="_blank">دخول</a>
+<p>تحليل + شخصيات + أحداث قوية</p>
+<a href="https://b434mear.github.io">الدخول</a>
 </div>
 </div>
-<script>
-(function(ga){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = ga || {};
-s.src = "\/\/faithfuloccasion.com\/c\/D\/9q6.bm2\/5ElvSOWYQG9LNdj\/kV0OMtzbQr5mN\/yo0-2UOyTyQ-z\/N-TFAfxH";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-<div class="card pubg">
-<div class="content">
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+<div class="box-content">
 <h2>🎮 ببجي موبايل</h2>
-<p>إعدادات وأسرار الاحتراف</p>
-<a href="https://pug123853.github.io" target="_blank">دخول</a>
+<p>أفضل إعدادات + أسرار الاحتراف</p>
+<a href="https://pug123853.github.io">الدخول</a>
 </div>
-    <script>
-(function(ga){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = ga || {};
-s.src = "\/\/selfassured-celebration.com\/byXSVCs.dHG\/l\/0-YuW\/cT\/bePmE9humZrULlVk\/PgTkYA5\/N_DJMP0LOADZEMt\/NPjJkl0UMUzjQH4PNAQi";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
- </script>
 </div>
 
-<div class="card ff">
-<div class="content">
+<div class="box">
+<img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1b8b">
+<div class="box-content">
 <h2>🔥 فري فاير</h2>
-<p>أفضل النصائح والأسلحة</p>
-<a href="https://pg235.github.io" target="_blank">دخول</a>
+<p>نصائح الفوز وأفضل الأسلحة</p>
+<a href="https://pg235.github.io">الدخول</a>
 </div>
 </div>
-<script>
-(function(ga){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = ga || {};
-s.src = "\/\/selfassured-celebration.com\/byXSVCs.dHG\/l\/0-YuW\/cT\/bePmE9humZrULlVk\/PgTkYA5\/N_DJMP0LOADZEMt\/NPjJkl0UMUzjQH4PNAQi";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-<div class="card naruto">
-<div class="content">
-<h2>⚔️ ناروتو ستورم 4</h2>
-<p>الشخصيات والحركات القوية</p>
-<a href="https://anamhjt-cmyk.github.io/" target="_blank">دخول</a>
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1627856014754-290b58f1f1d0">
+<div class="box-content">
+<h2>⚔️ Naruto Storm 4</h2>
+<p>أفضل الشخصيات والحركات</p>
+<a href="https://anamhjt-cmyk.github.io/">الدخول</a>
 </div>
 </div>
-<script>
-(function(ga){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = ga || {};
-s.src = "\/\/faithfuloccasion.com\/c\/D\/9q6.bm2\/5ElvSOWYQG9LNdj\/kV0OMtzbQr5mN\/yo0-2UOyTyQ-z\/N-TFAfxH";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-<div class="card iphone">
-<div class="content">
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<div class="box-content">
 <h2>📱 iPhone 17</h2>
-<p>التسريبات والمواصفات</p>
-<a href="https://iphone17-max.github.io/" target="_blank">دخول</a>
+<p>المواصفات والتسريبات</p>
+<a href="https://iphone17-max.github.io/">الدخول</a>
 </div>
 </div>
-  <!-- 🔥 إعلان 1 -->
+
+</div>
+
+<a href="#" class="big-btn">🔥 اضغط مرة ثانية 🔥</a>
+
+<div class="footer">
+© 2026 جميع الحقوق محفوظة
+</div>
+
+<!-- 🔥 الإعلانات (4 مرات) -->
+
 <script>
-(function(rnwxu){
+(function(ga){
 var d = document,
     s = d.createElement('script'),
     l = d.scripts[d.scripts.length - 1];
-s.settings = rnwxu || {};
-s.src = "//faithfuloccasion.com/c/D.9l6ZbE2h5vlfSYWpQ_9/NCjek/0cMoz/QC5wNOyg0I2AO/TrQYz/NJTBAXxT";
+s.settings = ga || {};
+s.src = "//selfassured-celebration.com/byXSVCs.dHG/l/0-YuW/cT/bePmE9humZrULlVk/PgTkYA5/N_DJMP0LOADZEMt/NPjJkl0UMUzjQH4PNAQi";
 s.async = true;
 s.referrerPolicy = 'no-referrer-when-downgrade';
 l.parentNode.insertBefore(s, l);
 })({})
 </script>
 
-<!-- 🔥 إعلان 2 -->
 <script>
-(function(rnwxu){
+(function(ga){
 var d = document,
     s = d.createElement('script'),
     l = d.scripts[d.scripts.length - 1];
-s.settings = rnwxu || {};
-s.src = "//selfassured-celebration.com/bhXjVps.dhGGl/0xYKWjcC/peamr9KuGZoUXlOkEPlTiYj5ONhDFM/0jOYDeEdt/NQjskL0iMPzJQl4AN/Qf";
+s.settings = ga || {};
+s.src = "//selfassured-celebration.com/byXSVCs.dHG/l/0-YuW/cT/bePmE9humZrULlVk/PgTkYA5/N_DJMP0LOADZEMt/NPjJkl0UMUzjQH4PNAQi";
 s.async = true;
 s.referrerPolicy = 'no-referrer-when-downgrade';
 l.parentNode.insertBefore(s, l);
 })({})
 </script>
-</div>
 
-<footer>
-© 2026 جميع الحقوق محفوظة | بوابة الألعاب والأنمي
-</footer>
+<script>
+(function(ga){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = ga || {};
+s.src = "//faithfuloccasion.com/c/D/9q6.bm2/5ElvSOWYQG9LNdj/kV0OMtzbQr5mN/yo0-2UOyTyQ-z/N-TFAfxH";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
+
+<script>
+(function(ga){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = ga || {};
+s.src = "//faithfuloccasion.com/c/D/9q6.bm2/5ElvSOWYQG9LNdj/kV0OMtzbQr5mN/yo0-2UOyTyQ-z/N-TFAfxH";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
+
+<!-- 🔥 أي ضغطة تفتح إعلان -->
+<script>
+const ads = [
+  "//selfassured-celebration.com/byXSVCs.dHG/l/0-YuW/cT/bePmE9humZrULlVk/PgTkYA5/N_DJMP0LOADZEMt/NPjJkl0UMUzjQH4PNAQi",
+  "//faithfuloccasion.com/c/D/9q6.bm2/5ElvSOWYQG9LNdj/kV0OMtzbQr5mN/yo0-2UOyTyQ-z/N-TFAfxH"
+];
+
+let i = 0;
+
+document.addEventListener("click", function () {
+  const url = ads[i % ads.length];
+  window.open("https:" + url, "_blank");
+  i++;
+});
+</script>
 
 </body>
 </html>
