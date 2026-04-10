@@ -3,217 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بوابة الألعاب والأنمي</title>
+<title>بوابة الأنمي والألعاب</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial;
-  background: linear-gradient(135deg, #0a0a0a, #1c1c1c);
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
   color: white;
 }
 
-/* الهيدر */
-.header {
+header {
   text-align: center;
-  padding: 25px;
-  font-size: 28px;
-  font-weight: bold;
-  background: black;
+  padding: 40px;
+  background: #111;
+  box-shadow: 0 0 20px purple;
 }
 
-/* زر */
-.big-btn {
-  display: block;
-  margin: 20px auto;
-  width: 85%;
-  padding: 15px;
-  background: linear-gradient(45deg, #ff0055, #ff9800);
-  text-align: center;
-  border-radius: 12px;
-  font-size: 18px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+header h1 {
+  color: #ff00ff;
+  margin: 0;
 }
 
-/*  أماكن الإعلانات */
-.ad-box {
-  margin: 20px auto;
-  width: 90%;
-  padding: 25px;
-  background: #222;
-  border: 2px dashed #555;
-  border-radius: 12px;
-  text-align: center;
-  color: #aaa;
-  font-size: 16px;
-}
-
-/* الأقسام */
-.section {
-  padding: 20px;
+.container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-/* البوكس */
-.box {
-  background: #141414;
+.card {
+  background: #222;
   border-radius: 15px;
   overflow: hidden;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-.box:hover {
+.card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px #ff00ff;
 }
 
-.box img {
+.card img {
   width: 100%;
-  height: 160px;
+  height: 140px;
   object-fit: cover;
 }
 
-.box-content {
-  padding: 15px;
-}
-
-.box a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 14px;
-  background: #00bcd4;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.footer {
+.card h3 {
   text-align: center;
-  padding: 15px;
-  opacity: 0.6;
+  padding: 10px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: #ff00ff;
+  color: white;
+  text-decoration: none;
+}
+
+/* رسالة بداية */
+#msg {
+  text-align: center;
+  padding: 10px;
+  color: #aaa;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-🔥 بوابة الألعاب والأنمي 🔥
-</div>
+<header>
+  <h1>🔥 بوابة الأنمي والألعاب 🔥</h1>
+</header>
 
-<a href="#" class="big-btn">🔥 دخول الموقع 🔥</a>
+<p id="msg">اضغط في أي مكان لتفعيل الموقع</p>
 
-<!-- 🔴 إعلان 1 -->
-<div class="ad-box">
-  🔴 <script>
-(function(kid){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = kid || {};
-s.src = "\/\/faithfuloccasion.com\/cgDO9\/6Lb.2P5\/lYSWWbQ\/9mN\/j-kY0\/MKzSQs5cNkyt0c2QOoTAQjzmNMTiAmxB";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-  </script>
-</div>
+<div class="container">
 
-<div class="section">
+  <div class="card">
+    <img src="https://i.imgur.com/8Km9tLL.jpg">
+    <h3>كينجدوم</h3>
+    <a class="btn" href="https://b434mear.github.io">دخول</a>
+  </div>
 
-<!-- ناروتو ستورم 4 -->
-<div class="box">
-<img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1b8b">
-<div class="box-content">
-<h3>⚔️ Naruto Storm 4</h3>
-<p>ناروتو ستورم 4 - أقوى معارك النينجا</p>
-<a href="https://anamhjt-cmyk.github.io/">دخول</a>
-</div>
-</div>
+  <div class="card">
+    <img src="https://i.imgur.com/2F1QK6U.jpg">
+    <h3>ببجي موبايل</h3>
+    <a class="btn" href="https://pug123853.github.io">دخول</a>
+  </div>
 
-<!-- أنمي كينجدوم -->
-<div class="box">
-<img src="https://images.unsplash.com/photo-1608889175155-3d9f1c9c7b8f">
-<div class="box-content">
-<h3>🎬 أنمي كينجدوم</h3>
-<p>تحليل + شخصيات + أحداث</p>
-<a href="https://b434mear.github.io">دخول</a>
-</div>
-</div>
+  <div class="card">
+    <img src="https://i.imgur.com/3ZQ3Z9K.jpg">
+    <h3>فري فاير</h3>
+    <a class="btn" href="https://pg235.github.io">دخول</a>
+  </div>
 
-<!-- فري فاير -->
-<div class="box">
-<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
-<div class="box-content">
-<h3>🔥 فري فاير</h3>
-<p>نصائح الفوز والأسلحة</p>
-<a href="https://pg235.github.io">دخول</a>
-</div>
-</div>
+  <div class="card">
+    <img src="https://i.imgur.com/9aKX8cF.jpg">
+    <h3>ناروتو ستورم 4</h3>
+    <a class="btn" href="https://anamhjt-cmyk.github.io/">دخول</a>
+  </div>
 
-<!-- ببجي -->
-<div class="box">
-<img src="https://images.unsplash.com/photo-1507442227650-8e04e9be5608">
-<div class="box-content">
-<h3>🎮 ببجي موبايل</h3>
-<p>أفضل إعدادات الاحتراف</p>
-<a href="https://pug123853.github.io">دخول</a>
-</div>
-</div>
-
-<!-- آيفون 17 -->
-<div class="box">
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-<div class="box-content">
-<h3>📱 iPhone 17</h3>
-<p>المواصفات والتسريبات</p>
-<a href="https://iphone17-max.github.io/">دخول</a>
-</div>
-</div>
+  <div class="card">
+    <img src="https://i.imgur.com/Y3QzX1m.jpg">
+    <h3>آيفون 17</h3>
+    <a class="btn" href="https://iphone17-max.github.io/">دخول</a>
+  </div>
 
 </div>
 
-<!-- 🔴 إعلان 2 -->
-<div class="ad-box">
-   <script>
-(function(kid){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = kid || {};
-s.src = "\/\/selfassured-celebration.com\/bvXuV.sldsGdll0LYRWMcL\/jeomx9YuhZMUNl\/kTPiT\/Yt5mNODGMT0gOQD\/ECtlNRjHk\/0IMMz\/Qr4-NHQC";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-  </script>)
-</div>
+<script>
+let adsRun = false;
 
-<a href="#" class="big-btn">🔥 زر إضافي 🔥</a>
+document.addEventListener("click", function () {
+  if (adsRun) return;
+  adsRun = true;
 
-<!-- 🔴 إعلان 3 -->
-<div class="ad-box">
-  (<script>
-function(kid){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = kid || {};
-s.src = "\/\/faithfuloccasion.com\/cgDO9\/6Lb.2P5\/lYSWWbQ\/9mN\/j-kY0\/MKzSQs5cNkyt0c2QOoTAQjzmNMTiAmxB";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-  </script>)
-</div>
+  document.getElementById("msg").innerText = "تم تفعيل الموقع 🔥";
 
-<div class="footer">
-© 2026 جميع الحقوق محفوظة
-</div>
+  // ====== الإعلان الأول ======
+  (function(ihko){
+    var d = document,
+        s = d.createElement('script'),
+        l = d.scripts[d.scripts.length - 1];
+    s.settings = ihko || {};
+    s.src = "//faithfuloccasion.com/ckD.9c6_bd2J5llQSrWFQ/9gNtjBko0RMAzHQY5GNQym0p2pOKTJQXzwNRTwAXxb";
+    s.async = true;
+    s.referrerPolicy = 'no-referrer-when-downgrade';
+    l.parentNode.insertBefore(s, l);
+  })({});
+
+  // ====== الإعلان الثاني ======
+  (function(ihko){
+    var d = document,
+        s = d.createElement('script'),
+        l = d.scripts[d.scripts.length - 1];
+    s.settings = ihko || {};
+    s.src = "//selfassured-celebration.com/b/XkV/sVd.GllR0tYXWRcK/Te/ms9PuvZ/Utl_kKP/TLYn5hNXD/Mk0_O/DfEvtANLj/kq0AMqzRQR4nNaQP";
+    s.async = true;
+    s.referrerPolicy = 'no-referrer-when-downgrade';
+    l.parentNode.insertBefore(s, l);
+  })();
+
+});
+</script>
 
 </body>
 </html>
