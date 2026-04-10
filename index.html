@@ -9,17 +9,29 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: linear-gradient(135deg, #000000, #1a1a1a);
   color: white;
+  background: url("https://images.unsplash.com/photo-1604079628040-94301bb21b91") no-repeat center center fixed;
+  background-size: cover;
 }
 
-/* هيدر */
+/* طبقة تغميق فوق الخلفية */
+body::before{
+  content:"";
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.75);
+  z-index:-1;
+}
+
+/* الهيدر */
 .header {
   text-align: center;
-  padding: 25px;
-  font-size: 28px;
-  background: black;
+  padding: 30px;
+  font-size: 30px;
   font-weight: bold;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
 }
 
 /* زر كبير */
@@ -27,8 +39,8 @@ body {
   display: block;
   margin: 20px auto;
   width: 85%;
-  padding: 20px;
-  background: linear-gradient(45deg, red, orange);
+  padding: 18px;
+  background: linear-gradient(45deg, #ff0000, #ff9800);
   text-align: center;
   border-radius: 15px;
   font-size: 20px;
@@ -42,163 +54,123 @@ body {
   transform: scale(1.05);
 }
 
-/* أقسام */
+/* الشبكة */
 .section {
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-/* كرت */
+/* الكروت */
 .box {
-  background: #1a1a1a;
-  margin: 15px 0;
-  padding: 20px;
   border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  display: flex;
+  align-items: flex-end;
   transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .box:hover {
-  background: #222;
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
-.box h2 {
-  margin: 0 0 10px;
+/* طبقة سوداء */
+.box::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.55);
 }
 
-.box a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #00bcd4;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
+/* النص داخل الكرت */
+.box-content {
+  position: relative;
+  padding: 15px;
+  z-index: 2;
+}
+
+/* خلفيات لكل كرت */
+.anime {
+  background: url("https://images.unsplash.com/photo-1627856014754-290b58f1f1d0") center/cover;
+}
+
+.pubg {
+  background: url("https://images.unsplash.com/photo-1606813907291-d86efa9b94db") center/cover;
+}
+
+.ff {
+  background: url("https://images.unsplash.com/photo-1612287230202-1ff1d85d1b8b") center/cover;
+}
+
+.naruto {
+  background: url("https://images.unsplash.com/photo-1531259683007-016a7b628fc3") center/cover;
+}
+
+.iphone {
+  background: url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9") center/cover;
 }
 
 /* فوتر */
 .footer {
   text-align: center;
   padding: 15px;
-  opacity: 0.6;
+  opacity: 0.7;
+  margin-top: 20px;
 }
 </style>
 </head>
 
 <body>
-<script>
-(function(rnwxu){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = rnwxu || {};
-s.src = "\/\/faithfuloccasion.com\/c\/D.9l6ZbE2h5vlfSYWpQ_9\/NCjek\/0cMoz\/QC5wNOyg0I2AO\/TrQYz\/NJTBAXxT";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-<div class="header">
-🔥 بوابة الألعاب والأنمي 🔥
-</div>
 
-<!-- 🔥 إعلان فوق -->
-<script>
-<script>
-(function(rnwxu){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = rnwxu || {};
-s.src = "\/\/selfassured-celebration.com\/bhXjVps.dhGGl\/0xYKWjcC\/peamr9KuGZoUXlOkEPlTiYj5ONhDFM\/0jOYDeEdt\/NQjskL0iMPzJQl4AN\/Qf";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-</script>
+<div class="header">🔥 بوابة الألعاب والأنمي 🔥</div>
 
-<!-- زر ضغط -->
-<a href="#" class="big-btn" onclick="clickBtn()">🔥 اضغط هنا للدخول 🔥</a>
+<a href="#" class="big-btn">🔥 اضغط هنا للدخول 🔥</a>
 
 <div class="section">
 
-<div class="box">
-<h2>🎬 أنمي كينجدوم</h2>
-<p>تحليل + شخصيات + أحداث قوية</p>
-<a href="https://b434mear.github.io">الدخول</a>
+<div class="box anime">
+  <div class="box-content">
+    <h2>🎬 أنمي كينجدوم</h2>
+    <p>تحليل + شخصيات + أحداث قوية</p>
+  </div>
 </div>
 
-<div class="box">
-<h2>🎮 ببجي موبايل</h2>
-<p>أفضل إعدادات + أسرار الاحتراف</p>
-<a href="https://pug123853.github.io">الدخول</a>
+<div class="box pubg">
+  <div class="box-content">
+    <h2>🎮 ببجي موبايل</h2>
+    <p>أفضل إعدادات + أسرار الاحتراف</p>
+  </div>
 </div>
 
-<div class="box">
-<h2>🔥 فري فاير</h2>
-<p>نصائح الفوز وأفضل الأسلحة</p>
-<a href="https://pg235.github.io">الدخول</a>
+<div class="box ff">
+  <div class="box-content">
+    <h2>🔥 فري فاير</h2>
+    <p>نصائح الفوز وأفضل الأسلحة</p>
+  </div>
 </div>
 
-<div class="box">
-<h2>⚔️ Naruto Storm 4</h2>
-<p>أفضل الشخصيات والحركات</p>
-<a href="https://anamhjt-cmyk.github.io/">الدخول</a>
+<div class="box naruto">
+  <div class="box-content">
+    <h2>⚔️ Naruto Storm 4</h2>
+    <p>أفضل الشخصيات والحركات</p>
+  </div>
 </div>
 
-<div class="box">
-<h2>📱 iPhone 17</h2>
-<p>المواصفات والتسريبات</p>
-<a href="https://iphone17-max.github.io/">الدخول</a>
+<div class="box iphone">
+  <div class="box-content">
+    <h2>📱 iPhone 17</h2>
+    <p>المواصفات والتسريبات</p>
+  </div>
 </div>
 
 </div>
 
-<!-- 🔥 إعلان وسط -->
-<script>
-<script>
-(function(rnwxu){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = rnwxu || {};
-s.src = "\/\/faithfuloccasion.com\/c\/D.9l6ZbE2h5vlfSYWpQ_9\/NCjek\/0cMoz\/QC5wNOyg0I2AO\/TrQYz\/NJTBAXxT";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-</script>
-</script>
-
-<a href="#" class="big-btn" onclick="clickBtn()">🔥 اضغط مرة ثانية 🔥</a>
-
-<!-- 🔥 إعلان تحت -->
-<script>
-  <script>
-(function(rnwxu){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = rnwxu || {};
-s.src = "\/\/selfassured-celebration.com\/bhXjVps.dhGGl\/0xYKWjcC\/peamr9KuGZoUXlOkEPlTiYj5ONhDFM\/0jOYDeEdt\/NQjskL0iMPzJQl4AN\/Qf";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-</script>
-</script>
-
-<div class="footer">
-© 2026 جميع الحقوق محفوظة
-</div>
-
-<script>
-function clickBtn(){
-  alert("اضغط مرة ثانية للدخول 😎");
-}
-</script>
+<div class="footer">© 2026 جميع الحقوق محفوظة</div>
 
 </body>
 </html>
